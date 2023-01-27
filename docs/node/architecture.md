@@ -2,7 +2,8 @@
 title: Node Architecture
 ---
 
-![](../../static/img/node/node-architecture.svg)
+
+![Node Architecture](https://user-images.githubusercontent.com/75987728/215083774-0e502269-e60e-4542-af86-37a5015b58a5.png)
 
 Image: Diagram representing the composite client architecture of a Gnosis node
 
@@ -16,7 +17,7 @@ Gnosis started out as a [proof-of-authority ](../specs/consensus/aura.md) sidech
 
 ## Composite Network Architecture
 
-![](../../static/img/node/composite-networks.svg)
+![Inter-Layer Communication (2)](https://user-images.githubusercontent.com/75987728/215086305-2509e25d-1f70-4fad-ad47-187d0f60bf3e.png)
 
 Gnosis (post-merge) utilizes the same [composite layer architecture](https://hackmd.io/@n0ble/the-merge-terminology) as Ethereum. Gnosis' network is created through the interaction of two layers: an Execution Layer (EL) network and a Consensus Layer (CL) network. 
 
@@ -24,7 +25,7 @@ To run a Gnosis node, you need to run an Execution Layer and Consensus Layer cli
 
 ### Execution Layer
 
-![](../../static/img/node/execution-layer-architecture.png)
+![Execution Layer Visual](https://user-images.githubusercontent.com/75987728/215084096-9795f4f4-bf01-4bc9-be53-eada8bd24c0a.png)
 
 Gnosis' Execution Layer is the legacy xDai "Eth1" network. The Execution Layer is where smart contracts and the EVM and network rules reside. Prior to the Merge, the Execution Layer utilized a [Proof-of-Authority consensus](../specs/consensus/aura.md), which was deprecated by the merge in favor of the Consensus Layer instead. 
 
@@ -43,7 +44,7 @@ Gnosis used to be supported by the [Parity OpenEthereum client](./guide/executio
 
 ### Consensus Layer
 
-![](../../static/img/node/consensus-layer-architecture.png)
+![CL](https://user-images.githubusercontent.com/75987728/215083996-54f66fd6-337d-46e7-ac55-66eeda4fc4a7.png)
 
 Gnosis' Consensus Layer utilizes the same architecture and tooling as Ethereum's Consensus Layer, and is a key sister chain to Ethereum in the emerging Ethereum Beaconverse. It is responsible for proof-of-stake incentives, and maintaining consensus chain, proposals and attestations, and fork choices. 
 
